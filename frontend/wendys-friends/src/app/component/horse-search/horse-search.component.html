@@ -1,0 +1,50 @@
+<div class="row justify-content-between">
+<div class="m-2 my-3 col-lg-6 col-xs-12">
+<h2>Search Horse</h2>
+<div *ngIf="serverError.error" class="my-2 alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>Error! </strong> {{ serverError.errorMessage }}
+  <button type="button" (click)="serverError.vanishError()" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form #userForm="ngForm"  novalidate>
+
+  <div class="form-group">
+    <label for="horseName">Horse name</label>
+    <input [(ngModel)]="searchHorseModel.name" name="name" type="text" class="form-control" id="horseName" aria-describedby="nameHelp" placeholder="Enter name" required>
+  </div>
+  <div class="form-group">
+    <label for="description">Horse description</label>
+    <input [(ngModel)]="searchHorseModel.description" name="description" type="text" class="form-control" id="description" aria-describedby="descriptionHelp"
+           placeholder="Enter description">
+  </div>
+  <div class="form-group">
+    <label for="birthdate">Date of birth</label>
+    <input [(ngModel)]="searchHorseModel.birthdate" name="birthdate" type="date" class="form-control" id="birthdate" aria-describedby="birthdateHelp" placeholder="YYYY-MM-DD" required>
+  </div>
+  <div class="form-group">
+    <label for="rating">Rating</label>
+    <select [(ngModel)]="searchHorseModel.rating" name="rating" class="form-control" id="rating" required>
+      <option *ngFor="let opt of ratingOptions">{{opt}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="race">Race</label>
+    <select [(ngModel)]="searchHorseModel.race" name="race" class="form-control" id="race">
+      <option *ngFor="let opt of raceOptions">{{opt}}</option>
+    </select>
+  </div>
+
+  <button (click)="onSearchHorse()"  class="btn btn-dark" type="submit">Search horse</button>
+  <button (click)="onShowAll()"  class="btn mx-2 btn-secondary" type="submit">Show all</button>
+</form>
+</div>
+
+<div class="m-2 col-lg-5 col-xs-12">
+  <div *ngFor="let horse of horses" class="alert alert-primary pb-0">
+    <app-search-res-element-horse [horse]="horse" (deleteHorse)="onDeleteHorse($event)"
+                                  (updateMode)="updateMode.emit($event)">
+    </app-search-res-element-horse>
+  </div>
+</div>
+</div>

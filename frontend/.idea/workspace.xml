@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="52d9c50e-b414-49a4-85b8-beaae3c8f5c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Yw4k1KaJ9mQ3Jchlxv3n6Fy7he" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\A-TU\2020S\SEPM\template\frontend\wendys-friends\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\A-TU\2020S\SEPM\template\frontend\wendys-friends\src\app" />
+      <recent name="D:\A-TU\2020S\SEPM\template\frontend\wendys-friends\src\app\component" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52d9c50e-b414-49a4-85b8-beaae3c8f5c6" name="Default Changelist" comment="" />
+      <created>1583840461889</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583840461889</updated>
+      <workItem from="1583840463475" duration="758000" />
+      <workItem from="1583841445781" duration="3790000" />
+      <workItem from="1584182686131" duration="358000" />
+      <workItem from="1584183074203" duration="21000" />
+      <workItem from="1584190097537" duration="2603000" />
+      <workItem from="1584528224979" duration="10000" />
+      <workItem from="1584566570289" duration="30497000" />
+      <workItem from="1584822425576" duration="8991000" />
+      <workItem from="1584862234473" duration="80129000" />
+      <workItem from="1585138112424" duration="29407000" />
+      <workItem from="1585222699705" duration="89068000" />
+      <workItem from="1586101715333" duration="26000" />
+      <workItem from="1586105634724" duration="8181000" />
+    </task>
+    <task id="LOCAL-00001" summary="User story 1 front- and backend (backend validation still missing)">
+      <created>1584741646339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584741646339</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Story 7: frontend for owner update.">
+      <created>1584892100130</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584892100130</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Story 8: frontend and backend for owner delete">
+      <created>1584903973056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584903973056</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Story 8: frontend and backend for owner delete (delete-owner component)">
+      <created>1584904048067</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584904048067</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Story 3: frontend for horse EDITING">
+      <created>1584952454053</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584952454053</updated>
+    </task>
+    <task id="LOCAL-00006" summary="spelling mistake fixed">
+      <created>1584956608403</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584956608403</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Story 4: frontend and backend for horse delete">
+      <created>1584959755738</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584959755738</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Story 5: frontend for horse search">
+      <created>1585044378207</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585044378207</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Story 4,8: making owner deletion id-free for the user">
+      <created>1585075925647</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585075925647</updated>
+    </task>
+    <task id="LOCAL-00010" summary="interface changes for horse search, update, delete">
+      <created>1585090807787</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585090807787</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Story 7: owner can be changed without knowing the id of the owner&#10;&#10;frontend re-factorised to implement the needed Story 7 features; small &#10;changes in the backend service (validation) and persistence layers to &#10;enable those new features">
+      <created>1585165000534</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585165000535</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Story 1: owner of the horse can be added without owners id">
+      <created>1585169699489</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585169699489</updated>
+    </task>
+    <task id="LOCAL-00013" summary="horse re-factorisation: some small changes for better user-experience&#10;&#10;also easier to maintain: methods with service use moved to respective &#10;components">
+      <created>1585175633681</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585175633681</updated>
+    </task>
+    <task id="LOCAL-00014" summary="horse bug fixes, show all button added">
+      <created>1585410145738</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1585410145738</updated>
+    </task>
+    <task id="LOCAL-00015" summary="owner refactorisation, show all button in search">
+      <created>1585602351757</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1585602351757</updated>
+    </task>
+    <task id="LOCAL-00016" summary="frontend exception handling improved, user interface improvement">
+      <created>1585864403134</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585864403134</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Story 2: image upload and change now possible">
+      <created>1586038852780</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586038852780</updated>
+    </task>
+    <task id="LOCAL-00018" summary="bug fixes">
+      <created>1586106460100</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1586106460100</updated>
+    </task>
+    <task id="LOCAL-00019" summary="bug fixes 2">
+      <created>1586106964298</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1586106964298</updated>
+    </task>
+    <task id="LOCAL-00020" summary="showing create and update times of owner and horse">
+      <created>1586111094526</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1586111094526</updated>
+    </task>
+    <task id="LOCAL-00021" summary="bug with image not disappearing after owner has been added fixed">
+      <created>1586123406594</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1586123406594</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="User story 1 front- and backend (backend validation still missing)" />
+    <MESSAGE value="Story 7: frontend." />
+    <MESSAGE value="Story 7: frontend for owner update." />
+    <MESSAGE value="Story 8: frontend and backend for owner delete" />
+    <MESSAGE value="Story 8: frontend and backend for owner delete (delete-owner component)" />
+    <MESSAGE value="Story 3: frontend for horse EDITING" />
+    <MESSAGE value="spelling mistake fixed" />
+    <MESSAGE value="Story 4: frontend and backend for horse delete" />
+    <MESSAGE value="Story 5: frontend for horse search" />
+    <MESSAGE value="aearch-bug with birthdate fixed" />
+    <MESSAGE value="Story 4,8: making owner deletion id-free for the user" />
+    <MESSAGE value="interface changes for horse search, update, delete" />
+    <MESSAGE value="Story 7: owner can be changed without knowing the id of the owner&#10;&#10;frontend refactorised to implement the needed Story 7 features; small &#10;changes in the backend service (validation) and persistence layers to &#10;enable those new features" />
+    <MESSAGE value="Story 7: owner can be changed without knowing the id of the owner&#10;&#10;frontend re-factorised to implement the needed Story 7 features; small &#10;changes in the backend service (validation) and persistence layers to &#10;enable those new features" />
+    <MESSAGE value="Story 1: owner of the horse can be added without owners id" />
+    <MESSAGE value="horse re-factorisation: some small changes for better user experiece&#10;&#10;(also easier to maintain)" />
+    <MESSAGE value="horse re-factorisation: some small changes for better user-experience&#10;&#10;also easier to maintain: methods with service use moved to respective &#10;components" />
+    <MESSAGE value="horse bug fixes, show all button added" />
+    <MESSAGE value="owner refactorisation, show all button in search" />
+    <MESSAGE value="frontend exception handling improved, user interface improvement" />
+    <MESSAGE value="Story 2: image upload and change now possible" />
+    <MESSAGE value="bug fixes" />
+    <MESSAGE value="bug fixes 2" />
+    <MESSAGE value="showing create and update times of owner and horse" />
+    <MESSAGE value="bug with image not disappearing after owner has been added fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug with image not disappearing after owner has been added fixed" />
+  </component>
+</project>

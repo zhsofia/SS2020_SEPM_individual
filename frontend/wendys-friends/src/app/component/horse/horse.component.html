@@ -1,0 +1,21 @@
+<div class="m-3"><h1>Horse Page</h1></div>
+
+<div class="btn-group m-3 my-4">
+  <button (click)="activateSearch()" class="btn btn-secondary active" name="modes" id="searchMode"> Search Horses
+  </button>
+  <button (click)="activateAdd()" class="btn btn-secondary" name="modes" id="addMode">Add Horses</button>
+</div>
+
+
+<div *ngIf="searchmode" class="container">
+  <app-horse-search (updateMode)="activateUpdate($event)" [raceOptions]="raceOptions" [ratingOptions]="ratingOptions"></app-horse-search>
+</div>
+
+<div *ngIf="addmode" class="container">
+  <app-add-new-horse [ratingOptions]="ratingOptions" [raceOptions]="raceOptions"></app-add-new-horse>
+</div>
+
+<div *ngIf="updatemode" class="container">
+  <app-update-horse (toSearchMode)="activateSearch()" [ratingOptions]="ratingOptions" [raceOptions]="raceOptions"
+                    [updateHorseModel]="updateHorseModel"></app-update-horse>
+</div>

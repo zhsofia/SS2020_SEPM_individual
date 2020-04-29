@@ -1,0 +1,17 @@
+<div class="col-6">
+  <h2>Update owner</h2>
+  <div *ngIf="serverError.error" class="alert m-2 alert-danger alert-dismissible fade show" role="alert">
+    <strong>Error! </strong> {{ serverError.errorMessage }}
+    <button type="button" (click)="serverError.vanishError()" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <form #userForm="ngForm" novalidate>
+    <div class="form-group">
+      <label for="name"> Update Owners name</label>
+      <input [(ngModel)]="updateOwnerModel.name" class="form-control" id="name" name="name" aria-describedby="nameHelp"
+             type="text" placeholder="Enter name">
+    </div>
+    <button class="btn btn-dark" (click)="onUpdateOwner()">Update owner</button>
+  </form>
+</div>

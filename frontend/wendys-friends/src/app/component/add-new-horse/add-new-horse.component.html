@@ -1,0 +1,78 @@
+<div class="row justify-content-between">
+<div class="m-2 my-3 col-xs-12 col-lg-6">
+  <h2>Add new Horse</h2>
+
+  <div *ngIf="this.serverError.error" class="my-2 alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Error! </strong> {{ this.serverError.errorMessage }}
+    <button type="button" (click)="this.serverError.vanishError()" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div *ngIf="validationError.error" class="my-2 alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Error! </strong> {{ validationError.errorMessage }}
+    <button type="button" (click)="validationError.vanishError()" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div *ngIf="success && !serverError.error" class="my-2 alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> Horse added!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <form #userForm="ngForm" novalidate>
+    <div class="form-group">
+      <label for="horseName">Horse name</label>
+      <input [(ngModel)]="addNewHorseModel.name" name="name" type="text" class="form-control" id="horseName"
+             aria-describedby="nameHelp" placeholder="Enter name" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Horse description</label>
+      <input [(ngModel)]="addNewHorseModel.description" name="description" type="text" class="form-control"
+             id="description" aria-describedby="descriptionHelp"
+             placeholder="Enter description">
+    </div>
+    <div class="form-group">
+      <label for="birthdate">Date of birth</label>
+      <input [(ngModel)]="addNewHorseModel.birthdate" name="birthdate" type="date" class="form-control" id="birthdate"
+             aria-describedby="birthdateHelp" placeholder="YYYY-MM-DD" required>
+    </div>
+    <div class="form-group">
+      <label for="rating">Rating</label>
+      <select [(ngModel)]="addNewHorseModel.rating" name="rating" class="form-control" id="rating" required>
+        <option *ngFor="let opt of ratingOptions">{{opt}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="race">Race</label>
+      <select [(ngModel)]="addNewHorseModel.race" name="race" class="form-control" id="race">
+        <option *ngFor="let opt of raceOptions">{{opt}}</option>
+      </select>
+    </div>
+    <div *ngIf="imageError.error" class="my-2 alert alert-danger alert-dismissible fade show" role="alert">
+      <strong>Error! </strong> {{ imageError.errorMessage}}
+      <button type="button" (click)="imageError.vanishError()" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div *ngIf="imageError.saved">
+      <img alt="Image upload" class="w-50" src="{{'data:image/jpeg;base64,'+addNewHorseModel.imageBase64}}">
+    </div>
+    <div class="form-group custom-file mt-3 mb-4">
+      <input type="file" (change)="onUpload($event)" id="image" name="image" class="custom-file-input form-control" aria-describedby="ImageHelp" placeholder="Load Image">
+      <label class="custom-file-label" for="image">Horse photo</label>
+    </div>
+    <div class="form-group d-flex ">
+      <button *ngIf="!ownerset" (click)="onChooseOwner()" class="btn mr-2 btn-outline-primary">Choose Owner</button>
+      <div *ngIf="ownerset" class="alert alert-success w-100 d-flex flex-row justify-content-between align-items-center">
+        <div>{{ownerMessage}}</div>
+        <button (click)="onChooseOwner()" class="btn mx-2 btn-outline-success">Change Owner</button>
+      </div>
+    </div>
+    <button (click)="onNewHorse()" class="btn btn-dark" type="submit">Add horse</button>
+  </form>
+</div>
+<div *ngIf="chooseOwner" class="m-2 my-3 col-xs-12 col-lg-5">
+  <app-owner-search [updatemode]="true" (setOwner)="onSetOwner($event)"></app-owner-search>
+</div>
+</div>

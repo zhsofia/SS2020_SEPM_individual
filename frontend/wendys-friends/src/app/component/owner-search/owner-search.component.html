@@ -1,0 +1,41 @@
+<h2>Search owner</h2>
+<div class="row">
+  <div class="col-6">
+    <div *ngIf="serverError.error" class="alert alert-danger alert-dismissible fade show" role="alert">
+      <strong>Error! </strong> {{ serverError.errorMessage }}
+      <button type="button" (click)="serverError.vanishError()" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <form #userForm="ngForm" novalidate>
+      <div class="form-group">
+        <label for="name">Owners name</label>
+        <input [(ngModel)]="searchOwnerModel.name" class="form-control" id="name" name="name"
+               aria-describedby="nameHelp" type="text" placeholder="Enter name">
+      </div>
+        <button class="btn btn-dark" (click)="onSearchOwners()">Search</button>
+        <button class="btn btn-secondary mx-2" (click)="onShowAll()">Show all</button>
+    </form>
+  </div>
+  <div class="col-6">
+    <div *ngFor="let owner of owners" class="alert alert-primary pb-0">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <p>Name: {{owner.name}}<br>
+          Created: {{' ' + owner.createdAt}}<br>
+          Updated: {{' ' + owner.updatedAt}}<br></p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="row justify-content-lg-end justify-content-sm-start">
+            <button *ngIf="!updatemode" (click)="onDeleteOwner(owner)" class="btn btn-danger m-2 small">Delete</button>
+            <button *ngIf="!updatemode" (click)="updateOwner.emit(owner)" class="btn btn-success m-2 small">Update
+            </button>
+            <button *ngIf="updatemode" (click)="setOwner.emit(owner.id)" class="btn btn-primary m-2 small">Choose
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

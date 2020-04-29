@@ -1,0 +1,26 @@
+<div class="m-3"> <h1>Owner Page</h1></div>
+
+<div class="btn-group m-3 mt-4 mb-5">
+  <button (click)="activateSearch()" class="btn btn-secondary active" name="modes" id="searchMode"> Search Owners
+  </button>
+  <button (click)="activateAdd()" class="btn btn-secondary" name="modes" id="addMode">Add Owners</button>
+</div>
+
+<div class="container">
+  <div *ngIf="searchmode">
+    <app-owner-search [updatemode]="false" (updateOwner)="activateUpdate($event)"></app-owner-search>
+  </div>
+</div>
+<div class="container">
+  <div *ngIf="addmode">
+    <app-add-new-owner></app-add-new-owner>
+  </div>
+</div>
+<div class="container">
+  <div *ngIf="updatemode">
+    <app-update-owner (toSearchMode)="activateSearch()" [updateOwnerModel]="updateOwnerModel"></app-update-owner>
+  </div>
+</div>
+
+
+

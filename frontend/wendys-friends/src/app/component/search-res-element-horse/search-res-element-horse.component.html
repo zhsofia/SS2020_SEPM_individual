@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-lg-8 col-md-12">
+    <p>
+      Name: <b>{{' ' + horse.name}}</b><br>
+      Birth-date: <b>{{' ' + horse.birthdate}}</b><br>
+      Description: <b>{{' ' + horse.description}}</b><br>
+      Rating: <b>{{' ' + horse.rating}}</b> <br>
+      Race: <b>{{' ' + horse.race}}</b><br>
+      Created: <b>{{' ' + horse.createdAt}}</b><br>
+      Updated: <b>{{' ' + horse.updatedAt}}</b><br>
+      <span *ngIf="owner"> Owner: <b>{{' ' + owner.name}}</b></span>
+    </p>
+    <div *ngIf="image" class="col-12 p-2">
+      <img alt="" class="w-100 horse-img" [src]="sanitizedImageSrc" >
+    </div>
+    <div class="alert alert-danger" *ngIf="noOwner && !owner"><b>Error loading owner!</b></div>
+  </div>
+  <div class="col-lg-4 col-md-12">
+    <div class="row justify-content-lg-end justify-content-md-start">
+      <button (click)="deleteHorse.emit(horse)" class="btn btn-danger m-2 btn small">Delete</button>
+      <button (click)="updateMode.emit(horse)" class="btn btn-success m-2 small">Update</button>
+      <button (click)="searchOwner(horse.idofowner)" class="btn btn-primary m-2 small">Owner</button>
+    </div>
+  </div>
+</div>
