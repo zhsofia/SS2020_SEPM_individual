@@ -1,0 +1,21 @@
+logging:
+  level:
+    root: INFO
+    at.ac.tuwien.sepm.assignment.individual: DEBUG
+    at.ac.tuwien.sepm.assignment.individual.service: TRACE
+  file:
+    name: ./log/wendys-friends.log
+
+spring:
+  application:
+    name: wendys-friends
+  datasource:
+    url: "jdbc:h2:./wendydb;INIT=RUNSCRIPT FROM 'classpath:sql/createSchema.sql'\\;RUNSCRIPT FROM 'classpath:sql/insertData.sql'"
+    username: "sa"
+    password: ""
+    driver-class-name: "org.h2.Driver"
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8080
